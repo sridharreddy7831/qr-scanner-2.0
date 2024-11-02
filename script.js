@@ -15,7 +15,7 @@ domReady(function () {
 
     // If found you qr code
     function onScanSuccess(decodeText, decodeResult) {
-        // alert("You Qr is : " + decodeText, decodeResult);
+        alert("You Qr is : " + decodeText, decodeResult);
           // Display the decoded text in the result-text element
     document.getElementById("result-text").innerText = "QR Code Result: " + decodedText;
     
