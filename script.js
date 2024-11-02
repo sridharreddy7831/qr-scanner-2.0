@@ -18,9 +18,11 @@ domReady(function () {
         // alert("You Qr is : " + decodeText, decodeResult);
           // Display the decoded text in the result-text element
     document.getElementById("result-text").innerText = "QR Code Result: " + decodedText;
-    }
+    
     var audio = new Audio("beep.mp3");
     audio.play();
+
+    }
 
 
     let htmlscanner = new Html5QrcodeScanner(
