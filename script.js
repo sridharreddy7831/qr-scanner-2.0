@@ -15,15 +15,8 @@ domReady(function () {
 
     // If found you qr code
     function onScanSuccess(decodeText, decodeResult) {
-        // alert("You Qr is : " + decodeText, decodeResult);
-          // Display the decoded text in the result-text element
-    document.getElementById("result-text").innerText = "QR Code Result: " + decodedText;
-    
-    var audio = new Audio("beep.mp3");
-    audio.play();
-
+        alert("You Qr is : " + decodeText, decodeResult);
     }
-
 
     let htmlscanner = new Html5QrcodeScanner(
         "my-qr-reader",
