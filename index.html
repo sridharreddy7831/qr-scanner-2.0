@@ -8,8 +8,7 @@
           content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
           href="style.css">
-    <title>QR Code Scanner
-    </title>
+    <title>QR Code Scanner </title>
 </head>
 
 <body>
@@ -18,11 +17,12 @@
         <div class="section">
             <div id="my-qr-reader">
             </div>
-        </div>
+
+        <h1 id="qrCode"></h1> 
+        <h1 id="displayText1"></h1>
+
+        <audio id="myAudio" src="beep.mp3"></audio>
     </div>
-    <h1>scanned text is </h1>
-    <!-- Audio for scan success sound -->
-    <audio id="scan-sound" src="beep.mp3" preload="auto"></audio>
     <script
         src="https://unpkg.com/html5-qrcode">
     </script>
